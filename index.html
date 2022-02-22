@@ -1,0 +1,109 @@
+tu<!DOCTYPE html>
+<html>
+<head>
+<meta name="google-site-verification" content="GOx6kfgoq78IqS4vHqq7GSZm4SpNREYEPOYXhbW8V4c" />
+  
+<style>
+body {font-family: sans-serif;} 
+  
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #f1f1f1;
+  overflow-x: hidden;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 14px;
+  display: block;
+}
+
+<!--.sidenav a:hover {color: #006699;}-->
+
+.main {
+  margin-left: 180px; /* Same as the width of the sidenav */
+  margin-right: 18px;
+  font-size: 14px; /* Increased text to enable scrolling */
+  padding: 10px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 16px;}
+}
+  
+h1 {font-family: Helvetica, Arial, sans-serif; font-size: 26px; color: #006699;}
+h2 {font-family: Helvetica, Arial, sans-serif; font-size: 16px; color: #006699;} 
+h3 {font-family: Helvetica, Arial, sans-serif; font-size: 14px; color: #006699;}   
+p {font-family: Helvetica, Arial, sans-serif; font-size: 14px;}  
+  
+</style>  
+</head>
+  
+<body>
+<div class="sidenav">
+  <a href="https://github.com/lihou0427/WaferViz/blob/master/WaferViz_5.5.exe">Download WaferViz</a>  
+  <a href="#services">Services</a>
+  <a href="#clients">LinkedIn</a>
+  <a href="#contact">Email To</a>
+</div>
+
+<div class="main">
+  <h1>Wafer Visualization App - WaferViz</h1>
+  
+  <h2>About</h2>
+  <p>WaferViz is an open-source wafer plotting software intended for semiconductor engineers.</p>
+  <p>As a process engineer the author found it is helpful having plotting program handy for converting raw data to presentable graphs since in fabs where plotting programs are often embedded in metrology tools and not readily accessible.</p>
+  <h2>Features:</h2>
+  
+  <h3>2d and 3d maps:</h3>
+  <img src="example1.1.png" alt="examples" width="700" height="352">
+  
+  <h3>Set rotation, contour number and marker style:</h3>
+  <img src="example1.2.png" alt="examples" width="730" height="356">
+  
+  <h3>Cross section:</h3>
+  <img src="example2.1.png" alt="examples" width="700" height="245">
+  
+  <h3>Thickness as radius and theta increasing:</h3>
+  <img src="example2.2.png" alt="examples" width="700" height="238">
+  
+  <h3>Thickness distribution:</h3>
+  <img src="example3.1.png" alt="examples" width="700" height="243">
+  
+  <h2>User Guide</h2>
+  
+  <h3>Download app</h3>
+  <p>Click "Download WaferViz" in the top of left column. A github screen is shown as below.</p>
+  <img src="download1.png" alt="github screen for downloading" width="695" height="320">
+  <p>Click "Download" button in github screen. Ignore some warnings from Windows and you should have user interface of the app as following image.</p>
+  <img src="ui1.png" alt="App interface" width="700" height="272">
+  
+  <h3>Prepare datasheet</h3>
+  <p>Make an excel workbook that contains raw data and associated coordination you want to plot. Paste coordination into columns "A" and "B". Paste film thickness into columns from "C" to "V" starting from row "2". Up to 20 films can be loaded. You may want to add notes to row "1" that wouldn't affect software plotting. The data are arranged as shown below.</p>
+  <img src="data sheet1.png" alt="data sheet example" width="700" height="454">
+  
+  <h3>Load datasheet</h3>
+  <p>Click "Load" button in UI and select the datasheet you have prepared. Click "Open" and enter ID for this wafer. Use alphabet numbers and underscores to avoid any errors.</p>
+  <img src="load1.png" alt="load data sheet" width="700" height="470">
+  
+  <h3>Plot graphs</h3>
+  <p>Use two dropdown buttons "T1=C" and "T2=D" to select the two films of pre-process and post-process in datasheet you want to plot. "T1" and "T2" represent thickness of two films. In single-film case just select that film from dropdown button "T1=C" and select "0" from dropdown button "T2=D".</p>
+  
+  <p>You may need to adjust configurations for plotting if different from that pre-set ones in the UI.</p>
+  <img src="ui2.png" alt="load data sheet" width="715" height="419">
+  
+  <h3>Save graphs</h3>
+  <p>Whenever the "Save" button in the UI is clicked all graphs displayed in UI are saved as an excel file stored in a self-generated folder named "Saved graphs". The folder is under the same directory as WaferViz located. The saved file has self-generated name with id and time stamp.</p>
+  <img src="save.png" alt="load data sheet" width="730" height="498">
+  <p></p>
+</div>
+</body>
+</html> 
