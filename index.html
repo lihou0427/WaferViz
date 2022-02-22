@@ -63,44 +63,44 @@ p {font-family: Helvetica, Arial, sans-serif; font-size: 14px;}
   <p>As a process engineer the author found it is helpful having plotting program handy for converting raw data to presentable graphs since in fabs where plotting programs are often embedded in metrology tools and not readily accessible.</p>
   <h2>Features:</h2>
   
-  <p>2d and 3d maps:</p>
+  <h3>2d and 3d maps:</h3>
   <img src="example1.1.png" alt="examples" width="700" height="352">
   
-  <p>Set rotation, contour number and marker style:</p>
+  <h3>Set rotation, contour number and marker style:</h3>
   <img src="example1.2.png" alt="examples" width="730" height="356">
   
-  <p>Cross section:</p>
+  <h3>Cross section:</h3>
   <img src="example2.1.png" alt="examples" width="700" height="245">
   
-  <p>Thickness as radius and theta increasing:</p>
+  <h3>Thickness as radius and theta increasing:</h3>
   <img src="example2.2.png" alt="examples" width="700" height="238">
   
-  <p>Thickness distribution:</p>
+  <h3>Thickness distribution:</h3>
   <img src="example3.1.png" alt="examples" width="700" height="243">
   
   <h2>User Guide</h2>
   
-  <h3>1. Download app</h3>
+  <h3>Download app</h3>
   <p>Click "Download WaferViz" in the top of left column. A github screen is shown as below.</p>
   <img src="download1.png" alt="github screen for downloading" width="695" height="320">
   <p>Click "Download" button in github screen. Ignore some warnings from Windows and you should have user interface of the app as following image.</p>
   <img src="ui1.png" alt="App interface" width="700" height="272">
   
-  <h3>2. Prepare datasheet</h3>
+  <h3>Prepare datasheet</h3>
   <p>Make an excel workbook that contains raw data and associated coordination you want to plot. Paste coordination into columns "A" and "B". Paste film thickness into columns from "C" to "V" starting from row "2". Up to 20 films can be loaded. You may want to add notes to row "1" that wouldn't affect software plotting. The data are arranged as shown below.</p>
   <img src="data sheet1.png" alt="data sheet example" width="700" height="454">
   
-  <h3>3. Load datasheet</h3>
+  <h3>Load datasheet</h3>
   <p>Click "Load" button in UI and select the datasheet you have prepared. Click "Open" and enter ID for this wafer. Use alphabet numbers and underscores to avoid any errors.</p>
   <img src="load1.png" alt="load data sheet" width="700" height="470">
   
-  <h3>4. Plot graphs</h3>
+  <h3>Plot graphs</h3>
   <p>Use two dropdown buttons "T1=C" and "T2=D" to select the two films of pre-process and post-process in datasheet you want to plot. "T1" and "T2" represent thickness of two films. In single-film case just select that film from dropdown button "T1=C" and select "0" from dropdown button "T2=D".</p>
   
   <p>You may need to adjust configurations for plotting if different from that pre-set ones in the UI.</p>
   <img src="ui2.png" alt="load data sheet" width="715" height="419">
   
-  <h3>5. Save graphs</h3>
+  <h3>Save graphs</h3>
   <p>Whenever the "Save" button in the UI is clicked all graphs displayed in UI are saved as an excel file stored in a self-generated folder named "Saved graphs". The folder is under the same directory as WaferViz located. The saved file has self-generated name with id and time stamp.</p>
   <img src="save.png" alt="load data sheet" width="730" height="498">
   <p></p>
